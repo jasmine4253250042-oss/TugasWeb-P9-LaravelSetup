@@ -7,7 +7,7 @@ class PageController extends Controller
     public function home()
     {
         $data = [
-            'nama' => 'Jasmine',
+            'nama' => 'Jasmine Azzahra Alamsyah',
             'jurusan' => 'Ilmu Komputer',
             'semester' => 3
         ];
