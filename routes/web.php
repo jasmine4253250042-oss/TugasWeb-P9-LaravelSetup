@@ -2,9 +2,15 @@
 
 use Illuminate\Support\Facades\Route;
 
-use App\Http\Controllers\PageController;
+Route::get('/', function () {
+    $data = [
+        'nama' => 'Jasmine Azzahra Alamsyah',
+        'jurusan' => 'Ilmu Komputer',
+        'semester' => 3
+    ];
 
-Route::get('/', [PageController::class, 'home']);
+    return view('home', compact('data'));
+});
 
 Route::get('/about', function () {
     return view('about');
